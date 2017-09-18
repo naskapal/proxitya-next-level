@@ -1,0 +1,31 @@
+/*
+Proxytia GUI
+
+
+//monsters [kutuJahat, ayamGanas, sapiGila, kudaJingkrak, gajahMabuk]
+
+TAMPILKAN "masukkan nama"
+SIMPAN "nama"
+SIMPAN "playerHealth" dengan nilai 100
+SIMPAN "monsterHealth" dengan nilai 100
+SIMPAN "lowestDamage" dengan nilai ( Math.round ( Math.random() * ( 10 - 5 ) + 5 ))
+SIMPAN "highestDamage" dengan nilai ( Math.round ( Math.random() * ( 30 - "lowestDamage" ) + "lowestDamage" )
+SIMPAN "turn" dengan nilai "player"
+
+WHILE "bermain" true
+  WHILE "playerHealth" lebih besar dari nol atau variabel "i" lebih kecil dari panjang array "monsters"
+      IF "turn" sama dengan "player"
+        IF user memilih angka 1
+          HITUNG "damage" dengan nilai ( Math.random() * ( "highestDamage" - "lowestDamage" ) + "lowestDamage" )
+          HITUNG monsterHealth dikurangi dengan damage
+          SIMPAN hasil penghitungan sebelumnya ke "monsterHealth"
+
+        ELSE IF user memilih angka 2
+            HITUNG "damage" dengan nilai ( Math.random() * ( 5 + ( "highestDamage" - "lowestDamage" ) + "lowestDamage" ) )
+            HITUNG monsterHealth dikurangi dengan damage
+            SIMPAN hasil penghitungan sebelumnya ke "monsterHealth"
+        ENDIF
+      ELSE IF "turn" tidak sama dengan "player"
+        HITUNG "damage" dengan nilai ( Math.random() * ( "highestDamage" - "lowestDamage" ) + "lowestDamage" )
+        HITUNG "playerHealth" dikurangi dengan damage
+        SIMPAN hasil penghitungan sebelumnya ke "playerHealth"
